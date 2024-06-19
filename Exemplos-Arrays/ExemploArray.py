@@ -1,3 +1,11 @@
+# Função que percorre os elementos do array (vetor) por índice e imprime os seus valores
+def imprimirVetor(v):
+    n  = len(v)
+    for i in range(n):
+        print(v[i], end= ' ')
+
+#------------------------------------------------------------------------------------- 
+
 # Criacao de um array já inicializado com 10 inteiros
 A = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -40,4 +48,17 @@ for e in A:
 for i in range(tamanho): #o range com 1 parâmetro retorna de 0 até o valor do par - 1
     print('Valor de A[',i,']: ', A[i])
 
+# Criação de um array vazio
+vet = []
+
+# Ler do usuário o nro de elementos do array
+n = int(input('Digite o nro de elementos do array:'))
+
+# Preencher o vetor com números lidos do usuário
+for i in range(n):
+    #Ler o valor e armazenar no elemento em uma variável
+    valor = int(input('Digite o valor do elemento: '))
+    vet.append(valor)
+
+imprimirVetor(vet)
 
